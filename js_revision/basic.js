@@ -150,4 +150,4 @@ Reference:
 // console.log( sum);
 
 // let b;
-// console.log( typeof(typeof(b)))
+// console.log(typeof typeof b);
