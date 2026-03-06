@@ -42,3 +42,8 @@ let a = "Hello",
   b = "VSCode";
 console.log("Concat:", a.concat(" ", b)); // "Hello VSCode"
 console.log(`Template Literal: Hello ${"Rahul"}`); // "Hello Rahul"
+
+console.log(2 && 0);
+console.log(0 && -2);
+console.log(2 || 0);
+console.log(0 || 2);
