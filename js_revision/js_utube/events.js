@@ -30,3 +30,9 @@ btncolor.addEventListener("click", (e) => {
   const rndcol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
   document.body.style.backgroundColor = rndcol;
 });
+
+// let changebg = () => {
+//   const rndcol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+//   document.body.style.backgroundColor = rndcol;
+// };
+// setInterval(changebg, 1000);//use when u want change bg in 1 second
