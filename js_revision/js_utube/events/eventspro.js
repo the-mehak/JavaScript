@@ -11,9 +11,13 @@ box1.addEventListener(
   true,
 );
 
-maindiv.addEventListener("click", () => {
-  console.log("maindiv");
-});
+maindiv.addEventListener(
+  "click",
+  () => {
+    console.log("maindiv");
+  },
+  true,
+);
 
 // Use document.body
 document.body.addEventListener(
