@@ -25,7 +25,7 @@ let btnevent = document.getElementById("btnccolor");
 function random(number) {
   return Math.floor(Math.random() * (number + 1));
 }
-console.log(random(255));
+// console.log(random(number));
 btncolor.addEventListener("click", (e) => {
   const rndcol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
   document.body.style.backgroundColor = rndcol;
