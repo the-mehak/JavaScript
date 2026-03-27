@@ -14,7 +14,7 @@ let winingCondition = [
 ];
 let count = 0;
 let currentplayer = "X";
-function startGame(e) {
+function eventStart(e) {
   if (e.target.textContent === "") {
     e.target.textContent = currentplayer;
     count++;
@@ -26,10 +26,10 @@ function startGame(e) {
   }
 }
 
-tictac.addEventListener("click", startGame);
-//  {
-//   tictac.addEventListener("click", eventStart);
-// }
+function startGame() {
+  tictac.addEventListener("click", eventStart);
+}
+
 function winner() {
   winingCondition.forEach((item) => {
     let val0 = boxes[item[0]].innerHTML;
@@ -43,7 +43,7 @@ function winner() {
         boxes[item[2]].classList.add("winnerClass");
         count = 0;
         h1[0].innerText = `Winner is:${val0}`;
-        tictac.removeEventListener("click", startGame);
+        tictac.removeEventListener("click", eventStart);
       }
     }
   });
@@ -56,4 +56,6 @@ rBtn.addEventListener("click", () => {
     item.innerHTML = "";
     item.classList.remove("winnerClass");
   });
+  startGame();
 });
+startGame();
