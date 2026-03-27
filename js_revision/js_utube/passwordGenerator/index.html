@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 id="heading">Random Password Generator</h1>
+     <div class="conatiner">
+    <div class="div1">
+        <img id="statusImg" src="strong_castle.svg" alt="Status Image" />
+    </div>
+    <form style="flex: 1;">
+        <div class="div2">
+            <div class="show">
+                <div id="passshow"></div>
+                <button type="button" id="copyBtn">Copy</button>
+            </div>
+
+            <div class="length">
+                <h3 id="rangeText">Password length: 12</h3>
+                <input type="range" id="range" min="8" max="25" value="12" />
+            </div>
+
+            <div class="characters">
+                <h3>Characters used:</h3>
+                <div class="check-box-list">
+                    <input type="checkbox" id="uprlet" checked /><label for="uprlet">ABC</label>
+                    <input type="checkbox" id="smalletr" checked /><label for="smalletr">abc</label>
+                    <input type="checkbox" id="num" /><label for="num">123</label>
+                    <input type="checkbox" id="symbol" /><label for="symbol">#$&</label>
+                </div>
+            </div>
+            
+            <button id="genPass" type="button">Generate Password</button>
+        </div>
+    </form>
+</div>
+        </form>
+      </div>
+    </div>
+    <script src="pass.js"></script>
+  </body>
+</html>
