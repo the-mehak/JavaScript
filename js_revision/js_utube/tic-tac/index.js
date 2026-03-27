@@ -50,7 +50,7 @@ function winner() {
 }
 
 rBtn.addEventListener("click", () => {
-  currentplayer = "x";
+  currentplayer = "X";
   h1[0].innerHTML = "Tic Tac Toe";
   boxes.forEach((item) => {
     item.innerHTML = "";
