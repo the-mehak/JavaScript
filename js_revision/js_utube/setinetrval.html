@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background color</title>
+  </head>
+  <body>
+    <script>
+      const body = document.getElementsByTagName("body");
+
+      function changebg() {
+        let colorString = "123456789abcdef";
+        let color = "";
+        for (let i = 0; i < 6; i++) {
+          let randnum = Math.floor(Math.random() * colorString.length);
+          color += colorString[randnum];
+        }
+        body[0].style.backgroundColor = `#${color}`;
+      }
+      setInterval(changebg(), 2000);
+    </script>
+  </body>
+</html>
