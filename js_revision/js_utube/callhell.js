@@ -13,11 +13,21 @@ function orderid(itemname, cb2) {
     cb2(id);
   }, 4000);
 }
+function payment(item, id, cb3) {
+  console.log("payment stared", item, "with id no", id);
+  setTimeout(function timer3() {
+    let status = true;
+    cb3(status);
+  }, 6000);
+}
 
 let list = search("pizza", function fun1(itemname, getdata) {
   console.log(getdata);
   orderid(itemname, function getorderid(orderidget) {
     console.log(orderidget);
-    console.log("orderf is placed succesfully Your Order id is:", orderidget);
+    console.log("order is placed succesfully Your Order id is:", orderidget);
+    payment(itemname, orderidget, function getpaymentdetails(response) {
+      console.log(`payment response :${response}`);
+    });
   });
 });
