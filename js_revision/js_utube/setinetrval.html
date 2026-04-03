@@ -18,7 +18,12 @@
         }
         body[0].style.backgroundColor = `#${color}`;
       }
-      setInterval(changebg, 2000);
+      // setInterval(changebg, 2000);
+      for (var i = 1; i < 5; i++) {
+        setTimeout(() => {
+          console.log(i);
+        });
+      }
     </script>
   </body>
 </html>
