@@ -32,3 +32,4 @@ let list = search("pizza", function fun1(itemname, getdata) {
     });
   });
 });
+console.log(list);
