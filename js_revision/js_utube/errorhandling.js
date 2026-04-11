@@ -103,6 +103,8 @@ async function orderfood(item) {
     console.log("Payment successfull with status", valres3);
   } catch (err) {
     console.log(err);
+  } finally {
+    console.log("excutes wheter promise rejected and fullfilled");
   }
 }
 
