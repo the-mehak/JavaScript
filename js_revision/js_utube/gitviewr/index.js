@@ -22,6 +22,7 @@ const displayUSer = ({
   public_repos,
   followers,
   following,
+  html_url,
 }) => {
   document.querySelector(".secondDiv").innerHTML = ` 
       <div class="leftdiv">
@@ -46,7 +47,13 @@ const displayUSer = ({
         </div>
          <div class="viewprofile"><button>View profile</button></div>
       </div>
+      
+
       <div><button class="clear">Clear</button></div>`;
+
+  document.querySelector(".viewprofile").addEventListener("click", () => {
+    window.open(html_url, "_blank");
+  });
   document.querySelector(".clear").addEventListener("click", () => {
     document.getElementById("getname").value = "";
     document.querySelector(".secondDiv").innerHTML = "";

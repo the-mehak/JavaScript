@@ -35,7 +35,6 @@ img {
   height: 100px;
   border-radius: 50%;
 }
-/* Existing styles mein ye changes karein */
 
 .box {
   display: flex;
@@ -85,7 +84,10 @@ img {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 60%;
   height: 200px;
+}
+.clear {
+  width: 100%;
 }
