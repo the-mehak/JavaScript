@@ -10,9 +10,9 @@
 // }
 // api();
 
-async function api() {
+async function api(username) {
   try {
-    let response = await fetch("https://codethread.cyclic.app/sum?a=3&b=5");
+    let response = await fetch(`https://api.github.com/users/${username}`);
     let result = await response.json();
     console.log(result);
   } catch (err) {
@@ -20,5 +20,5 @@ async function api() {
   }
 }
 
-api();
+api("the-mehak");
 // ("https://dummyjson.com/products/sum?a=3&b=5");
