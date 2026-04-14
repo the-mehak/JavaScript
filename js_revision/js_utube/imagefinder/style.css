@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 90%; /* Mobile ke liye 90% behtar hai */
+  max-width: 800px; /* Desktop par zyada bada na ho */
+  min-height: 70vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+.allimage {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+#keyword {
+  width: 70%; /* Mobile ke liye 90% behtar hai */
+  max-width: 800px; /* Desktop par zyada bada na ho */
+  height: 10%;
+}
+
+/* Mobile Responsive Media Query */
+@media (max-width: 600px) {
+  .allimage {
+    flex-direction: column;
+    height: auto;
+  }
+}
