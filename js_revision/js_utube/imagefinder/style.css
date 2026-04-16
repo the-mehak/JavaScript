@@ -10,7 +10,8 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  gap: 20px;
 }
 
 .box {
@@ -22,18 +23,44 @@
   width: 90%; /* Mobile ke liye 90% behtar hai */
   max-width: 800px; /* Desktop par zyada bada na ho */
   min-height: 70vh;
-  padding: 20px;
+  padding: 3rem;
   gap: 20px;
 }
 
 .allimage {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
+  border: 1px solid black;
   width: 100%;
   padding: 20px;
   gap: 20px;
 }
+.image1 {
+  border: 2px solid black;
+}
+.image1 p {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.topimagediv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.topimagediv img {
+  width: 25%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.topimagediv h6 {
+  font-size: 20px;
+}
+.userimg {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
 #keyword {
   width: 70%; /* Mobile ke liye 90% behtar hai */
   max-width: 800px; /* Desktop par zyada bada na ho */
@@ -43,6 +70,7 @@
 /* Mobile Responsive Media Query */
 @media (max-width: 600px) {
   .allimage {
+    display: flex;
     flex-direction: column;
     height: auto;
   }
