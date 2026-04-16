@@ -27,9 +27,8 @@
 }
 
 .allimage {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   /* border: 1px solid black; */
   width: 100%;
   padding: 20px;
