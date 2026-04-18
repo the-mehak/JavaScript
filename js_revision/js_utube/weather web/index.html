@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.nazTanHoiUI3rcXPFag59QHaHa%3Fpid%3DApi&f=1&ipt=67f2293f169a172b3889bcd51a9e01e9ffdb1b01412c4d284e124e35995806cd&ipo=images"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+          <source src="./bg.mp4" type="video/mp4" />
+        </video>
+        <div class="headsearchdiv">
+          <div class="homeheading content">
+            <h1 class="mainheading">Weather</h1>
+            <img src="./cloudsun.png" class="cloud1" />
+          </div>
+          <div class="serachbox content">
+            <input class="search" placeholder="City Name..." type="text" />
+            <h3>OR</h3>
+            <button class="currentloc">Use Current Location</button>
+
+            <button class="btn" id="btn">Search</button>
+          </div>
+        </div>
+        <!-- <div class="weather content hidden">
+          <div class="heading">
+            <h1 class="divheading">Weather</h1>
+            <img src="./cloudsun.png" class="cloud" />
+          </div>
+          <div class="info">
+            <div class="temp">32°C</div>
+            <div class="cityname">City</div>
+          </div>
+          <div class="data">
+            <div class="Wind">
+              Wind
+              <p>25</p>
+            </div>
+            <div class="pressure">
+              Pressure
+              <p>25</p>
+            </div>
+            <div class="humidity">
+              Humidity
+              <p>25</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
