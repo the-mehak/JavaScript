@@ -93,9 +93,10 @@
 }
 .currentloc {
   width: 50%;
+  min-width: 150px;
   height: 5vh;
   border-radius: 15px;
-  background-color: #1749b5;
+  background-color: #7097eb;
   align-content: center;
 }
 
@@ -246,12 +247,12 @@
 }
 .change-loc-btn {
   width: fit-content;
-  min-width: 150px;
+  min-width: 250px;
   margin: 20px auto;
   padding: 10px 20px;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(201, 208, 233, 0.1);
   color: white;
   cursor: pointer;
   font-size: 0.9rem;
@@ -271,13 +272,13 @@
 }
 @media (max-width: 768px) {
   .weather {
-    width: 90%; /* Mobile par card bada dikhega */
-    height: auto; /* Content ke hisaab se height adjust hogi */
+    width: 90%;
+    height: auto;
     padding: 20px 10px;
   }
 
   .search {
-    width: 250px; /* Choti screen par search box thoda chota */
+    width: 250px;
   }
 
   .search:focus {
@@ -285,7 +286,7 @@
   }
 
   .divheading {
-    font-size: 200%; /* Text thoda chota mobile ke liye */
+    font-size: 200%;
   }
 
   .temp {
@@ -293,7 +294,7 @@
   }
 
   .data {
-    flex-wrap: wrap; /* Data items niche move ho sakein */
+    flex-wrap: wrap;
     gap: 15px;
   }
 }

@@ -68,12 +68,11 @@ function displaydetail(res) {
     existingdiv.remove();
   }
   searchbox.classList.add("hidden");
-  // Naya div create karna
+
   let div = document.createElement("div");
   div.setAttribute("class", "weather content");
   div.classList.add("visible");
 
-  // API se real data nikaal kar HTML mein daalna
   div.innerHTML = `
     <div class="heading">
       <h1 class="divheading">Weather</h1>
@@ -92,12 +91,11 @@ function displaydetail(res) {
 
   dataContainer.appendChild(div);
 
-  // const changeBtn = div.querySelector(".change-loc-btn");
-  // changeBtn.addEventListener("click", () => {
-  //   // Card ko hatao aur Search box wapas dikhao
-  //   div.remove();
-  //   searchSection.classList.remove("hidden");
-  //   cityInput.value = ""; //
-  //   cityInput.focus(); //
-  // });
+  const changeBtn = div.querySelector(".change-loc-btn");
+  changeBtn.addEventListener("click", () => {
+    div.remove();
+    searchbox.classList.remove("hidden");
+    cityInput.value = "";
+    cityInput.focus();
+  });
 }
