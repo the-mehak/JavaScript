@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  margin-top: 10%;
+  width: 100vw;
+  height: 100vh;
+}
+.intext {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#input {
+  width: 30%;
+  min-width: 300px;
+  padding: 12px 20px;
+
+  font-size: 16px;
+  border-radius: 3.3px;
+  border: 1px solid rgba(65, 112, 230, 0.4);
+
+  /* Glass effect
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+
+  color: rgb(31, 29, 29);
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 4px 3px 11px rgba(24, 93, 157, 0.1);
+}
+
+#input::placeholder {
+  color: rgba(0, 8, 27, 0.7);
+}
+
+#input:focus {
+  width: 350px;
+  background: rgba(74, 124, 231, 0.3);
+  border: 1px solid rgba(97, 30, 30, 0.8);
+  box-shadow: 0 8px 25px rgba(144, 126, 236, 0.2);
+}
+
+#add {
+  width: 5%;
+  min-width: 100px;
+  padding: 12px 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: 1px solid rgba(75, 244, 151, 0.4);
+
+  /* Glass effect
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  font-family: "Times New Roman", Times, serif;
+
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 4px 3px 11px rgba(20, 128, 152, 0.1);
+}
+#add:hover {
+  background-color: rgba(23, 228, 126, 0.877);
+  color: black;
+}
+.singletodo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  margin-top: 2%;
+}
+.textline {
+  text-decoration: line-through;
+}
+.num {
+  position: absolute;
+  left: 1px;
+  padding-left: 12px;
+}
+.tasks {
+  min-height: 50px;
+  width: 300px;
+  height: auto;
+
+  word-wrap: break-word;
+  background-color: rgb(137, 195, 234);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+/* #checkbox input:checked {
+  background-color: green;
+} */
+.btn {
+  width: 100px;
+
+  padding: 7px 10px;
+  font-size: 19px;
+  border-radius: 10px;
+  background-color: rgba(228, 26, 23, 0.877);
+  border: 1px solid rgba(75, 131, 244, 0.4);
+  font-family: "Times New Roman", Times, serif;
+
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 4px 3px 11px rgba(20, 128, 152, 0.1);
+}
+
+.btn:hover {
+  background-color: rgba(237, 159, 158, 0.877);
+  color: black;
+}

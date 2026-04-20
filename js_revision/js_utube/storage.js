@@ -1,6 +1,18 @@
-let input = document.getElementById("in");
-
-input.addEventListener("input", (e) => {
-  localStorage.setItem("name", e.target.value);
-  document.getElementById("h1in").innerText = localStorage.getItem("name");
+let btn = document.getElementById("btn");
+btn.addEventListener("click", (e) => {
+  let name = document.getElementById("name").value;
+  let rollno = document.getElementById("rollno").value;
+  localStorage.setItem("data", JSON.stringify({ name: name, rollno: rollno }));
+  document.getElementById("h1in").innerText = JSON.parse(
+    localStorage.getItem("data"),
+  ).name;
+  document.getElementById("h2in").innerText = JSON.parse(
+    localStorage.getItem("data"),
+  ).rollno;
 });
+document.getElementById("h1in").innerText = JSON.parse(
+  localStorage.getItem("data"),
+).name;
+document.getElementById("h2in").innerText = JSON.parse(
+  localStorage.getItem("data"),
+).rollno;
