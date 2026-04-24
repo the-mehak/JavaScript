@@ -65,7 +65,7 @@
 //     alert("ADD Todo First");
 //   }
 // });
-let a = 2;
-let b = "abc";
+// let a = 2;
+// let b = "abc";
 
-console.log("abc" * 2);
+// console.log("abc" * 2);
