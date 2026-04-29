@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>react</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <script>
+      const h1 = React.createElement(
+        "h1",
+        {
+          id: 1,
+          className: "first",
+          style: { backgroundColor: "orange", padding: "10px" },
+        },
+        " H1",
+      );
+      const h2 = React.createElement(
+        "h2",
+        {
+          id: 2,
+          className: "first",
+          style: { backgroundColor: "lightGreen", padding: "10px" },
+        },
+        " H2",
+      );
+      const h3 = React.createElement(
+        "h3",
+        {
+          id: 3,
+          className: "first",
+          style: { backgroundColor: "lightblue", padding: "10px" },
+        },
+        "H3",
+      );
+      const div = React.createElement("div", {}, [h1, h2, h3]);
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(div);
+    </script>
+    <!-- <script type="module" src="/src/main.jsx"></script> -->
+  </body>
+</html>
