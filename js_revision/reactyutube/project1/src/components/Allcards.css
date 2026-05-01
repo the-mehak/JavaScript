@@ -1,0 +1,4 @@
+.div1:hover {
+  transform: translateY(-5px); /* Moves the card up slightly */
+  box-shadow: 20px 10px 20px rgba(253, 92, 92, 0.15);
+}

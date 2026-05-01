@@ -11,7 +11,7 @@ function App() {
   }
   function decrease() {
     setCount((count) => {
-      return count - 1;
+      return count - 1; 
     });
   }
   return (
