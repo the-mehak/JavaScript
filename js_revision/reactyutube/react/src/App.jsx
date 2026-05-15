@@ -1,20 +1,30 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 import { Body } from "./components/Body";
-
-// import "./App.css";
+import { Home } from "./components/Home";
+import { Resume } from "./components/Resume";
+import { Project } from "./components/Project";
+import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { PageNotFound } from "./components/PageNotFound";
+import { Login } from "./components/Login";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Body />}></Route>
-        <Route path="/resume" element={<h1>resume</h1>}></Route>
-        <Route path="/projects" element={<h1>Project</h1>}></Route>
-        <Route path="/about" element={<h1>About</h1>}></Route>
-        <Route path="/contact" element={<h1>Contact</h1>}></Route>
-        <Route path="*" element={<h1>page not found</h1>}></Route>
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />}>
+            <Route path="body" element={<Body />}></Route>
+            <Route path="resume" element={<Resume />}></Route>
+            <Route path="projects" element={<Project />}></Route>
+            <Route path="about" element={<About />}></Route>
+            <Route path="contact" element={<Contact />}></Route>
+          </Route>
+          <Route path="*" element={<PageNotFound />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
