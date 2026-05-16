@@ -70,7 +70,7 @@ function App() {
                 type="button"
                 onClick={() => handleDelete(index)}
               >
-                Delete
+                🗑 Delete
               </button>
             </div>
           ))
