@@ -23,7 +23,7 @@ export function Login() {
     const { number, pass } = val;
 
     if (number === defaultData.number && pass === defaultData.pass) {
-      navigate("/");
+      navigate("/home");
     } else {
       alert("Invalid credentials");
     }

@@ -1,4 +1,5 @@
 import React from "react";
+import UserContext from "./utilites/Context";
 
 const PropsDrilling = () => {
   return (
@@ -27,10 +28,15 @@ const Parents = () => {
 };
 const Child = () => {
   return (
-    <div style={{ border: "2px solid blue", padding: "20px" }}>
-      {" "}
-      <h1>Child</h1>
-    </div>
+    <UserContext.Consumer>
+      {(user) => (
+        <div style={{ border: "2px solid blue", padding: "20px" }}>
+          <h1>Child</h1>
+          <p>Name : {user?.name}</p>
+          <p>Age : {user?.age}</p>
+        </div>
+      )}
+    </UserContext.Consumer>
   );
 };
 

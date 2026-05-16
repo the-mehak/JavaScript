@@ -8,23 +8,26 @@ import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { PageNotFound } from "./components/PageNotFound";
 import { Login } from "./components/Login";
+import UserContext from "./components/utilites/Context";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Home />}>
-            <Route path="body" element={<Body />}></Route>
-            <Route path="resume" element={<Resume />}></Route>
-            <Route path="projects" element={<Project />}></Route>
-            <Route path="about" element={<About />}></Route>
-            <Route path="contact" element={<Contact />}></Route>
-          </Route>
-          <Route path="*" element={<PageNotFound />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <UserContext.Provider value={{ name: "Mahak", age: 23 }}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Home />}>
+              <Route path="body" element={<Body />}></Route>
+              <Route path="resume" element={<Resume />}></Route>
+              <Route path="projects" element={<Project />}></Route>
+              <Route path="about" element={<About />}></Route>
+              <Route path="contact" element={<Contact />}></Route>
+            </Route>
+            <Route path="*" element={<PageNotFound />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </UserContext.Provider>
     </>
   );
 }
