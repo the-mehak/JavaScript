@@ -108,6 +108,24 @@
   background: white;
 }
 
+.todo-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.btn-success {
+  background: #16a34a;
+  color: white;
+}
+
+.todo-done h2,
+.todo-done p {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
 .todo-details h2 {
   margin: 0 0 6px;
   font-size: 1.1rem;
